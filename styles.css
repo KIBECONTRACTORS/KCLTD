@@ -1,111 +1,70 @@
-/* General Styles */
-body {
+body, html {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    height: 100%;
 }
 
-/* Header Styles */
 header {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
-    color: #fff;
-    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }
 
-header .container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
+header nav ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
-nav ul li {
-    margin-right: 1rem;
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-nav ul li a {
-    color: #fff;
+header nav ul li a {
+    color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-/* Slideshow Styles */
 .slideshow-container {
-    position: relative;
     max-width: 100%;
+    position: relative;
     margin: auto;
     overflow: hidden;
 }
 
-.mySlides {
-    display: none;
-}
-
-img {
+.mySlides img {
     width: 100%;
-    height: auto;
+    height: 100vh; /* Make images fill the screen height */
+    object-fit: cover; /* Ensure images cover the entire container */
 }
 
-/* Fade animation */
-.fade {
-    animation: fade 1.5s ease-in-out;
+.container {
+    padding: 20px;
 }
 
-@keyframes fade {
-    from { opacity: .4 }
-    to { opacity: 1 }
-}
-
-/* Section Styles */
 section {
-    padding: 2rem 0;
-    color: #fff;
+    padding: 60px 0;
 }
 
-section#home {
-    background-image: url("https://github.com/KIBECONTRACTORS/KCLTD/raw/main/site.jpeg");
-    background-size: cover;
-    background-position: center;
-}
-
-section#about {
-    background-image: url("https://github.com/KIBECONTRACTORS/KCLTD/raw/main/site4.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-section#services {
-    background-image: url("https://github.com/KIBECONTRACTORS/KCLTD/raw/main/kibe%20house%202.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-section#team {
-    background-image: url("https://github.com/KIBECONTRACTORS/KCLTD/raw/main/site3.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-section#contact {
-    background-image: url("https://github.com/KIBECONTRACTORS/KCLTD/raw/main/site%202.jpg");
-    background-size: cover;
-    background-position: center;
+h1, h2, h3 {
+    margin: 0;
+    padding-bottom: 20px;
 }
 
 footer {
     background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
+    color: white;
     text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
 }
