@@ -1,93 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-}
-
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
 }
 
 .container {
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
+    overflow: hidden;
 }
 
-.intro-text {
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
-    margin: 20px 0;
 }
 
-.intro-text h2 {
-    font-size: 24px;
-    font-weight: bold;
+header h1 {
+    margin: 0;
+    font-size: 36px;
 }
 
-.intro-text p {
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px 0;
+}
+
+section#home h2 {
+    text-align: center;
+    font-size: 28px;
+}
+
+section#home p {
+    text-align: center;
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: -10px;
 }
 
-.slideshow-container {
-    max-width: 100%;
+#slideshow {
     position: relative;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 20px auto;
 }
 
 .mySlides {
     display: none;
 }
 
-.mySlides img {
+.slideshow-container img {
+    vertical-align: middle;
     width: 100%;
+    height: auto;
 }
 
-/* About Us Section */
-#about {
-    padding: 50px 0;
-    background-color: #f4f4f4;
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
-#about h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 
-#about h3 {
-    font-size: 22px;
-    margin-top: 10px;
-}
-
-#about p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-/* Footer */
 footer {
-    background-color: #333;
-    color: white;
+    background: #333;
+    color: #fff;
     text-align: center;
     padding: 10px 0;
-    margin-top: 30px;
+    margin-top: 20px;
 }
