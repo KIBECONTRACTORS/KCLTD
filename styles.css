@@ -38,7 +38,7 @@ nav ul li a {
 }
 
 section {
-    padding: 10px 0; /* Reduced padding */
+    padding: 10px 20px; /* Increased padding for sections */
 }
 
 #home {
@@ -53,15 +53,15 @@ section {
     overflow: hidden;
 }
 
-#slideshow .text {
+#home .text {
     position: absolute;
-    top: 10%;
+    top: 50%; /* Center vertically */
     left: 50%;
-    transform: translate(-50%, -10%);
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
     text-align: center;
     color: #fff;
-    font-size: 18px; /* Adjusted font size */
-    padding: 0 20px;
+    font-size: 20px; /* Adjusted font size */
+    padding: 20px; /* Increased padding for better readability */
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text readability */
     width: 100%;
 }
