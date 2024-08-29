@@ -1,35 +1,44 @@
+/* Resetting default margin and padding */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
 }
 
 header {
     background: #333;
     color: #fff;
     padding: 10px 0;
-    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 28px; /* Adjusted font size */
+    text-align: center;
 }
 
 nav ul {
-    padding: 0;
     list-style: none;
     text-align: center;
+    padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -38,42 +47,57 @@ nav ul li a {
 }
 
 section {
-    padding: 10px 20px; /* Increased padding for sections */
+    padding: 60px 0;
+    position: relative; /* Ensure this does not interfere with the positioning of the slideshow */
 }
 
+/* Home section styling */
 #home {
     position: relative;
+    overflow: hidden; /* Ensure no scrollbars appear */
+    height: 100vh; /* Full viewport height */
 }
 
-#slideshow {
-    position: relative;
-    width: 100%;
-    height: 70vh; /* Adjusted height for better image visibility */
-    margin: 10px auto;
-    overflow: hidden;
-}
-
-#home .text {
+.text {
     position: absolute;
-    top: 50%; /* Center vertically */
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center horizontally and vertically */
-    text-align: center;
+    transform: translate(-50%, -50%);
     color: #fff;
-    font-size: 20px; /* Adjusted font size */
-    padding: 20px; /* Increased padding for better readability */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text readability */
+    text-align: center;
+    z-index: 1; /* Ensure text is above the slideshow */
+    padding: 0 20px; /* Adjust padding as needed */
+}
+
+.text h2 {
+    font-size: 2em; /* Adjust as needed */
+    font-weight: bold;
+}
+
+.text p {
+    font-size: 1.2em; /* Adjust as needed */
+}
+
+/* Slideshow container styling */
+#slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    z-index: 0; /* Ensure slideshow is below the text */
 }
 
 .slideshow-container {
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .mySlides {
     display: none;
+    position: absolute;
     width: 100%;
     height: 100%;
 }
@@ -81,8 +105,27 @@ section {
 .mySlides img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures images cover the container while maintaining aspect ratio */
+    object-fit: cover; /* Ensures images cover the area without distortion */
 }
 
+/* General section styling */
+section {
+    padding: 60px 0;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+.service, .team-member {
+    margin: 20px 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
 
 
