@@ -3,10 +3,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url("https://github.com/KIBECONTRACTORS/KCLTD/raw/main/eldhouse.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+/* Header Styles */
 header {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
     color: #fff;
     padding: 1rem 0;
 }
@@ -39,23 +43,42 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Section Styles */
 section {
     padding: 2rem 0;
 }
 
-section .container {
-    width: 80%;
-    margin: 0 auto;
+section#home {
+    background-image: url("https://github.com/KIBECONTRACTORS/KCLTD/raw/main/site.jpeg");
+    background-size: cover;
+    background-position: center;
 }
 
-.service {
-    margin-bottom: 1rem;
+section#about {
+    background-image: url("https://github.com/KIBECONTRACTORS/KCLTD/raw/main/site4.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.team-member {
-    margin-bottom: 1rem;
+section#services {
+    background-image: url("https://github.com/KIBECONTRACTORS/KCLTD/raw/main/kibe%20house%202.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
+section#team {
+    background-image: url("https://github.com/KIBECONTRACTORS/KCLTD/raw/main/site3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+section#contact {
+    background-image: url("https://github.com/KIBECONTRACTORS/KCLTD/raw/main/site%202.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
@@ -86,6 +109,7 @@ form button:hover {
     background-color: #555;
 }
 
+/* Footer Styles */
 footer {
     background-color: #333;
     color: #fff;
