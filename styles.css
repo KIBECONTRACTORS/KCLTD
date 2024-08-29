@@ -128,4 +128,50 @@ footer {
     text-align: center;
 }
 
+/* Media Queries for Responsiveness */
+
+/* General styles for small screens */
+@media only screen and (max-width: 600px) {
+    .slideshow-container img {
+        width: 100%; /* Make the images take up the full width of the screen */
+        height: auto; /* Maintain the aspect ratio */
+    }
+
+    .text h2 {
+        font-size: 24px; /* Adjust the font size for smaller screens */
+    }
+
+    .text p {
+        font-size: 16px; /* Adjust the paragraph text size */
+    }
+
+    header {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+/* For very small screens (e.g., smartphones in portrait mode) */
+@media only screen and (max-width: 400px) {
+    .text h2 {
+        font-size: 20px; /* Further reduce font size */
+    }
+
+    .text p {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
+
 
