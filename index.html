@@ -13,8 +13,6 @@
     <meta property="og:image" content="https://github.com/KIBECONTRACTORS/KCLTD/raw/main/excavator.jpg">
     <meta property="og:url" content="https://kibecontractors.github.io/ltd/">
     <meta property="og:type" content="website">
-
-    <!-- Additional metadata (optional) -->
     <meta property="og:site_name" content="Kibe Contractors Limited">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -42,13 +40,11 @@
         "postalCode": "7843",
         "addressCountry": "KE"
       },
-      
-      "employee": [
-        {
+      "founder": {
         "@type": "Person",
         "name": "Eng, Josephat Keverenge"
-         "jobTitle": "Operational Director"
       },
+      "employee": [
         {
           "@type": "Person",
           "name": "Evance K. Busolo",
@@ -104,7 +100,7 @@
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="https://github.com/KIBECONTRACTORS/KCLTD/raw/main/roadworks.jpg.jpg" alt="Roadworks">
+                    <img src="https://github.com/KIBECONTRACTORS/KCLTD/raw/main/roadworks.jpg" alt="Roadworks">
                 </div>
 
                 <div class="mySlides fade">
@@ -199,10 +195,24 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 Kibe Contractors Limited. All rights reserved.</p>
-            <p>@Rizickine</p>
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
 </body>
 </html>
