@@ -11,13 +11,51 @@
     <meta property="og:title" content="Kibe Contractors Limited">
     <meta property="og:description" content="Your trusted partner for quality construction services. From concept to completion, our expert team ensures that every detail is meticulously handled.">
     <meta property="og:image" content="https://github.com/KIBECONTRACTORS/KCLTD/raw/main/excavator.jpg">
-    <meta property="og:url" content="https://your-github-username.github.io/your-repository-name/">
+    <meta property="og:url" content="https://kibecontractors.github.io/ltd/">
     <meta property="og:type" content="website">
 
     <!-- Additional metadata (optional) -->
     <meta property="og:site_name" content="Kibe Contractors Limited">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Kibe Contractors Limited",
+      "url": "https://kibecontractors.github.io/ltd/",
+      "logo": "https://github.com/KIBECONTRACTORS/KCLTD/raw/main/excavator.jpg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+254792834473",
+        "contactType": "Customer Service",
+        "areaServed": "KE",
+        "availableLanguage": "English"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Odinga Street, Building: Plot No, Eld Mun Block 7/9, Oloo Plaza",
+        "addressLocality": "Eldoret",
+        "addressRegion": "Uasin Gishu",
+        "postalCode": "7843",
+        "addressCountry": "KE"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Eng, Josephat Keverenge"
+      },
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "Evance K. Busolo",
+          "jobTitle": "Executive Manager"
+        }
+      ],
+      "description": "Kibe Contractors Limited is a construction and contracting company specializing in delivering high-quality construction services across various sectors including residential, commercial, industrial, and roads."
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -159,25 +197,10 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 Kibe Contractors Limited. All rights reserved.</p>
-                              <p>  @Rizickine</p>
+            <p>@Rizickine</p>
         </div>
     </footer>
 
-    <script>
-        let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}    
-            slides[slideIndex-1].style.display = "block";  
-            setTimeout(showSlides, 4000); // Change image every 4 seconds
-        }
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
